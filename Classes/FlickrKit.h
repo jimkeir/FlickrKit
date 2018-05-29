@@ -169,11 +169,9 @@ FOUNDATION_EXPORT const unsigned char FlickrKitVersionString[];
 
 - (nonnull FKImageUploadNetworkOperation *) uploadImage:(nonnull DUImage *)image args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
 
-<<<<<<< HEAD
 - (nonnull FKImageUploadNetworkOperation *) uploadStream:(nonnull NSInputStream *)imageStream args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
-=======
+
 - (nonnull FKFileUploadNetworkOperation *) uploadFile:(nonnull NSURL *)URL mimeType:(nonnull NSString *)mimeType args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
->>>>>>> 968e41f4c59fd9f1b17851e6cd67781986fcc3cd
 
 #if TARGET_OS_IOS
 - (nonnull FKImageUploadNetworkOperation *) uploadAssetURL:(nonnull NSURL *)assetURL args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
