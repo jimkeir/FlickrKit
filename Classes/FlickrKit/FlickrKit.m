@@ -348,9 +348,22 @@
 				NSString *username = [response valueForKeyPath:@"oauth.user.username"];
 				NSString *userid = [response valueForKeyPath:@"oauth.user.nsid"];
 				NSString *fullname = [response valueForKeyPath:@"oauth.user.fullname"];
+                NSString *permissions = [response valueForKeyPath:@"oauth.perms._content"];
 				
 				self.authorized = YES;
-				
+                self.permissionGranted = FKPermissionRead;
+                if (permissions != nil)
+                {
+                    if ([permissions caseInsensitiveCompare:@"write"] == NSOrderedSame)
+                    {
+                        self.permissionGranted = FKPermissionWrite;
+                    }
+                    else if ([permissions caseInsensitiveCompare:@"delete"] == NSOrderedSame)
+                    {
+                        self.permissionGranted = FKPermissionDelete;
+                    }
+                }
+
 				if (completion) {
 					completion(username, userid, fullname, nil);
 				}
