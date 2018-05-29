@@ -16,6 +16,7 @@
 @interface FKImageUploadNetworkOperation ()
 
 @property (nonatomic, strong) DUImage *image;
+@property (nonatomic, strong) NSInputStream *imageStream;
 @property (nonatomic, retain) NSString *tempFile;
 @property (nonatomic, copy) FKAPIImageUploadCompletion completion;
 @property (nonatomic, retain) NSDictionary *args;
@@ -32,8 +33,23 @@
     self = [super init];
     if (self) {
 		self.image = image;
+        self.imageStream = nil;
+        self.assetURL = nil;
 		self.args = args;
 		self.completion = completion;
+    }
+    return self;
+}
+
+- (instancetype) initWithStream:(NSInputStream *)imageStream arguments:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion
+{
+    self = [super init];
+    if (self) {
+        self.image = nil;
+        self.imageStream = imageStream;
+        self.assetURL = nil;
+        self.args = args;
+        self.completion = completion;
     }
     return self;
 }
@@ -43,6 +59,7 @@
     self = [super init];
     if (self) {
 		self.image = nil;
+        self.imageStream = nil;
         self.assetURL = assetURL;
 		self.args = args;
 		self.completion = completion;
@@ -143,7 +160,12 @@
                                      closingString:multipartClosingString];
     }
 #endif
-    else{
+    else if (self.imageStream != nil) {
+        [FKDUStreamUtil writeMultipartStartString:multipartOpeningString
+                                      imageStream:self.imageStream
+                                   toOutputStream:outputStream
+                                    closingString:multipartClosingString];
+    } else {
         return nil;
     }
 

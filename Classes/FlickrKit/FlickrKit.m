@@ -469,6 +469,12 @@
     return imageUpload;
 }
 
+- (FKImageUploadNetworkOperation *) uploadStream:(NSInputStream *)imageStream args:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion {
+    FKImageUploadNetworkOperation *imageUpload = [[FKImageUploadNetworkOperation alloc] initWithStream:imageStream arguments:args completion:completion];
+    [[FKDUNetworkController sharedController] execute:imageUpload];
+    return imageUpload;
+}
+
 #if TARGET_OS_IOS
 - (FKImageUploadNetworkOperation *) uploadAssetURL:(NSURL *)assetURL args:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion {
     FKImageUploadNetworkOperation *imageUpload = [[FKImageUploadNetworkOperation alloc] initWithAssetURL:assetURL

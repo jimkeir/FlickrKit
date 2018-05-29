@@ -18,6 +18,8 @@
 
 - (instancetype) initWithImage:(DUImage *)image arguments:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion NS_DESIGNATED_INITIALIZER;
 
+- (instancetype) initWithStream:(NSInputStream *)imageStream arguments:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion NS_DESIGNATED_INITIALIZER;
+
 #if TARGET_OS_IOS
 - (instancetype) initWithAssetURL:(NSURL *)assetURL arguments:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion NS_DESIGNATED_INITIALIZER;
 #endif
