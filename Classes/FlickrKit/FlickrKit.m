@@ -384,7 +384,15 @@
 	self.beginAuthURL = nil;
 }
 
+#pragma mark - Token auth
+
+- (void) completeAuthWithToken:(nonnull NSString *)token {
+    self.authToken = token;
+    self.authorized = YES;
+}
+
 @end
+
 
 
 #pragma mark - Photo Response

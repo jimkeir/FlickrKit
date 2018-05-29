@@ -136,6 +136,9 @@ FOUNDATION_EXPORT const unsigned char FlickrKitVersionString[];
 // 4. Logout - just removes all the stored keys
 - (void) logout;
 
+// Auth with token directly
+- (void) completeAuthWithToken:(nonnull NSString *)token;
+
 @end
 
 #pragma mark - Photo Response
