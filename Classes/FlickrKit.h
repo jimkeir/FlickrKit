@@ -19,6 +19,9 @@ FOUNDATION_EXPORT const unsigned char FlickrKitVersionString[];
 #import "FKDataTypes.h"
 #import "FKFlickrNetworkOperation.h"
 #import "FKImageUploadNetworkOperation.h"
+#import "FKReplaceImageNetworkOperation.h"
+#import "FKFileUploadNetworkOperation.h"
+#import "FKReplaceFileNetworkOperation.h"
 #import "FKFlickrAPIMethod.h"
 #import "FKAPIMethods.h"
 
@@ -163,9 +166,26 @@ FOUNDATION_EXPORT const unsigned char FlickrKitVersionString[];
 
 - (nonnull FKImageUploadNetworkOperation *) uploadImage:(nonnull DUImage *)image args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
 
+- (nonnull FKFileUploadNetworkOperation *) uploadFile:(nonnull NSURL *)URL mimeType:(nonnull NSString *)mimeType args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
+
 #if TARGET_OS_IOS
 - (nonnull FKImageUploadNetworkOperation *) uploadAssetURL:(nonnull NSURL *)assetURL args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion;
 #endif
 
 @end
 
+
+#pragma mark - Replace Photo
+
+@interface FlickrKit (ReplacePhoto)
+
+- (nonnull FKReplaceImageNetworkOperation *) replaceImage:(nonnull DUImage *)image flickrPhotoId:(nonnull NSString *)flickrPhotoId completion:(nullable FKAPIImageUploadCompletion)completion;
+
+- (nonnull FKReplaceFileNetworkOperation *) replaceFile:(nonnull NSURL *)URL mimeType:(nonnull NSString *)mimeType flickrPhotoId:(nonnull NSString *)flickrPhotoId completion:(nullable FKAPIImageUploadCompletion)completion;
+
+#if TARGET_OS_IOS
+//*** NOT TESTED
+- (nonnull FKReplaceImageNetworkOperation *) replaceAssetURL:(nonnull NSURL *)assetURL flickrPhotoId:(nonnull NSString *)flickrPhotoId completion:(nullable FKAPIImageUploadCompletion)completion;
+#endif
+
+@end
