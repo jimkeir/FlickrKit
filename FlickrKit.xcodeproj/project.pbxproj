@@ -10,7 +10,6 @@
 		55169F321BE941AD00BC8A6D /* FKFlickrTestEcho.m in Sources */ = {isa = PBXBuildFile; fileRef = 55597DA01BE796850063CF0D /* FKFlickrTestEcho.m */; };
 		55169F331BE941FF00BC8A6D /* FKFlickrTestEcho.h in Headers */ = {isa = PBXBuildFile; fileRef = 55597D9F1BE796850063CF0D /* FKFlickrTestEcho.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		552D918D1753F8EF00BE3FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D911B1753951300BE3FEA /* Foundation.framework */; };
-		552D919C1753F8F000BE3FEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D91191753951300BE3FEA /* UIKit.framework */; };
 		552D919D1753F8F000BE3FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D911B1753951300BE3FEA /* Foundation.framework */; };
 		552D91A01753F8F000BE3FEA /* libFlickrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D918C1753F8EF00BE3FEA /* libFlickrKit.a */; };
 		552D91F81754AE8A00BE3FEA /* FKDUBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D91E71754AE8A00BE3FEA /* FKDUBlocks.m */; };
@@ -1586,6 +1585,24 @@
 		6AF251D21BC0F1B3000C3223 /* FKURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 552D91F31754AE8A00BE3FEA /* FKURLBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AF251D31BC0F1B5000C3223 /* FKDUReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AEEF55175766D500B61A3C /* FKDUReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AF251D41BC0F1B6000C3223 /* FKDataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD4849175CA188004AF85C /* FKDataTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E00B881C1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E00B881B1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m */; };
+		E00B881D1DE3ECD2006FE9AB /* FKReplaceImageNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E00B881B1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m */; };
+		E00B881E1DE3ECF5006FE9AB /* FKReplaceImageNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E00B881A1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E00B881F1DE3ED24006FE9AB /* FKReplaceImageNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E00B881A1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E00B88201DE3ED3F006FE9AB /* FKReplaceImageNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E00B881B1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m */; };
+		E00B88A11DEA3F75006FE9AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552D91191753951300BE3FEA /* UIKit.framework */; };
+		E0E2DB531DEB986500C2DAD3 /* FKFileUploadNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E2DB501DEB986500C2DAD3 /* FKFileUploadNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E2DB541DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB511DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m */; };
+		E0E2DB551DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB511DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m */; };
+		E0E2DB561DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB511DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m */; };
+		E0E2DB571DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB511DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m */; };
+		E0E2DB581DEB990400C2DAD3 /* FKFileUploadNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E2DB501DEB986500C2DAD3 /* FKFileUploadNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E2DB5B1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E2DB591DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E2DB5C1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E2DB591DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E2DB5D1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB5A1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m */; };
+		E0E2DB5E1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB5A1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m */; };
+		E0E2DB5F1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB5A1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m */; };
+		E0E2DB601DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E2DB5A1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2119,6 +2136,12 @@
 		55EA68AC17CAABD40017DDD1 /* FKOFHMACSha1Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FKOFHMACSha1Base64.m; path = Utilities/FKOFHMACSha1Base64.m; sourceTree = "<group>"; };
 		6AAAF1211BC022A100EFC8E6 /* FlickrKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlickrKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAAF1251BC022A100EFC8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00B881A1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKReplaceImageNetworkOperation.h; sourceTree = "<group>"; };
+		E00B881B1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKReplaceImageNetworkOperation.m; sourceTree = "<group>"; };
+		E0E2DB501DEB986500C2DAD3 /* FKFileUploadNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKFileUploadNetworkOperation.h; sourceTree = "<group>"; };
+		E0E2DB511DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKFileUploadNetworkOperation.m; sourceTree = "<group>"; };
+		E0E2DB591DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKReplaceFileNetworkOperation.h; sourceTree = "<group>"; };
+		E0E2DB5A1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKReplaceFileNetworkOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2135,9 +2158,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00B88A11DEA3F75006FE9AB /* UIKit.framework in Frameworks */,
 				55826E3719CC3C0F008EB81B /* AssetsLibrary.framework in Frameworks */,
 				55AEEF5B17576A3D00B61A3C /* SystemConfiguration.framework in Frameworks */,
-				552D919C1753F8F000BE3FEA /* UIKit.framework in Frameworks */,
 				552D919D1753F8F000BE3FEA /* Foundation.framework in Frameworks */,
 				552D91A01753F8F000BE3FEA /* libFlickrKit.a in Frameworks */,
 			);
@@ -2297,6 +2320,12 @@
 				552D91F21754AE8A00BE3FEA /* FKFlickrNetworkOperation.m */,
 				55AD49041760DBE4004AF85C /* FKImageUploadNetworkOperation.h */,
 				55AD49051760DBE5004AF85C /* FKImageUploadNetworkOperation.m */,
+				E0E2DB501DEB986500C2DAD3 /* FKFileUploadNetworkOperation.h */,
+				E0E2DB511DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m */,
+				E00B881A1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.h */,
+				E00B881B1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m */,
+				E0E2DB591DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h */,
+				E0E2DB5A1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m */,
 				55AD49081760E545004AF85C /* FKUploadRespone.h */,
 				55AD49091760E546004AF85C /* FKUploadRespone.m */,
 				552D91F31754AE8A00BE3FEA /* FKURLBuilder.h */,
@@ -3133,6 +3162,9 @@
 				553B87711BCEC06400BF59AF /* FKDataTypes.h in Headers */,
 				553B87721BCEC06B00BF59AF /* FKDUNetworkOperation.h in Headers */,
 				553B87731BCEC07B00BF59AF /* FKImageUploadNetworkOperation.h in Headers */,
+				E0E2DB581DEB990400C2DAD3 /* FKFileUploadNetworkOperation.h in Headers */,
+				E00B881E1DE3ECF5006FE9AB /* FKReplaceImageNetworkOperation.h in Headers */,
+				E0E2DB5B1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h in Headers */,
 				553B87741BCEC08400BF59AF /* FKAPIMethods.h in Headers */,
 				553B87751BCEC08D00BF59AF /* FKFlickrAPIMethod.h in Headers */,
 				553B87761BCEC0AC00BF59AF /* FKFlickrNetworkOperation.h in Headers */,
@@ -3578,6 +3610,9 @@
 				6AF251CE1BC0F1AD000C3223 /* FKDUStreamUtil.h in Headers */,
 				6AF251CF1BC0F1AE000C3223 /* FKFlickrNetworkOperation.h in Headers */,
 				6AF251D01BC0F1B0000C3223 /* FKImageUploadNetworkOperation.h in Headers */,
+				E0E2DB531DEB986500C2DAD3 /* FKFileUploadNetworkOperation.h in Headers */,
+				E00B881F1DE3ED24006FE9AB /* FKReplaceImageNetworkOperation.h in Headers */,
+				E0E2DB5C1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.h in Headers */,
 				6AF251D11BC0F1B1000C3223 /* FKUploadRespone.h in Headers */,
 				6AF251D31BC0F1B5000C3223 /* FKDUReachability.h in Headers */,
 				6AF251D41BC0F1B6000C3223 /* FKDataTypes.h in Headers */,
@@ -3795,6 +3830,9 @@
 				55AD48E2175E7561004AF85C /* FlickrKit.m in Sources */,
 				55AD48E9175F3217004AF85C /* FKDUNetworkOperation.m in Sources */,
 				55AD49061760DBE5004AF85C /* FKImageUploadNetworkOperation.m in Sources */,
+				E0E2DB541DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */,
+				E00B881C1DE3EC0B006FE9AB /* FKReplaceImageNetworkOperation.m in Sources */,
+				E0E2DB5D1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */,
 				55AD490A1760E547004AF85C /* FKUploadRespone.m in Sources */,
 				55A5B668176613F900745C71 /* FKDUStreamUtil.m in Sources */,
 				555F2EEB17678A9800E84674 /* FKFlickrActivityUserComments.m in Sources */,
@@ -4437,6 +4475,7 @@
 				553B851E1BCEB24A00BF59AF /* FKFlickrStatsGetPhotosetDomains.m in Sources */,
 				553B851F1BCEB24A00BF59AF /* FKFlickrStatsGetPhotosetReferrers.m in Sources */,
 				553B85201BCEB24A00BF59AF /* FKFlickrStatsGetPhotosetStats.m in Sources */,
+				E0E2DB5E1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */,
 				553B85211BCEB24A00BF59AF /* FKFlickrStatsGetPhotoStats.m in Sources */,
 				553B85221BCEB24A00BF59AF /* FKFlickrStatsGetPhotostreamDomains.m in Sources */,
 				553B85231BCEB24A00BF59AF /* FKFlickrStatsGetPhotostreamReferrers.m in Sources */,
@@ -4453,6 +4492,7 @@
 				553B852E1BCEB24A00BF59AF /* FKFlickrTagsGetMostFrequentlyUsed.m in Sources */,
 				553B852F1BCEB24A00BF59AF /* FKFlickrTagsGetRelated.m in Sources */,
 				553B85311BCEB24A00BF59AF /* FKFlickrTestLogin.m in Sources */,
+				E0E2DB551DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */,
 				553B85321BCEB24A00BF59AF /* FKFlickrTestNull.m in Sources */,
 				553B85331BCEB24A00BF59AF /* FKFlickrUrlsGetGroup.m in Sources */,
 				553B85341BCEB24A00BF59AF /* FKFlickrUrlsGetUserPhotos.m in Sources */,
@@ -4683,6 +4723,9 @@
 				553B867B1BCEBC0400BF59AF /* FKDUStreamUtil.m in Sources */,
 				553B867C1BCEBC0400BF59AF /* FKFlickrNetworkOperation.m in Sources */,
 				553B867D1BCEBC0400BF59AF /* FKImageUploadNetworkOperation.m in Sources */,
+				E0E2DB561DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */,
+				E00B881D1DE3ECD2006FE9AB /* FKReplaceImageNetworkOperation.m in Sources */,
+				E0E2DB5F1DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */,
 				553B867E1BCEBC0400BF59AF /* FKUploadRespone.m in Sources */,
 				553B867F1BCEBC0400BF59AF /* FKURLBuilder.m in Sources */,
 				553B86801BCEBC0400BF59AF /* FKDUReachability.m in Sources */,
@@ -4924,6 +4967,9 @@
 				6AF250ED1BC0EE60000C3223 /* FKDUStreamUtil.m in Sources */,
 				6AF250EE1BC0EE60000C3223 /* FKFlickrNetworkOperation.m in Sources */,
 				6AF250EF1BC0EE60000C3223 /* FKImageUploadNetworkOperation.m in Sources */,
+				E0E2DB571DEB986500C2DAD3 /* FKFileUploadNetworkOperation.m in Sources */,
+				E00B88201DE3ED3F006FE9AB /* FKReplaceImageNetworkOperation.m in Sources */,
+				E0E2DB601DEBCD3B00C2DAD3 /* FKReplaceFileNetworkOperation.m in Sources */,
 				6AF250F01BC0EE60000C3223 /* FKUploadRespone.m in Sources */,
 				6AF250F11BC0EE60000C3223 /* FKURLBuilder.m in Sources */,
 				6AF250F21BC0EE60000C3223 /* FKDUReachability.m in Sources */,

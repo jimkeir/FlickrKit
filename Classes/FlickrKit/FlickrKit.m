@@ -397,6 +397,13 @@
 	self.beginAuthURL = nil;
 }
 
+#pragma mark - Token auth
+
+- (void) completeAuthWithToken:(nonnull NSString *)token {
+    self.authToken = token;
+    self.authorized = YES;
+}
+
 @end
 
 
@@ -488,6 +495,16 @@
     return imageUpload;
 }
 
+- (nonnull FKFileUploadNetworkOperation *) uploadFile:(nonnull NSURL *)URL mimeType:(nonnull NSString *)mimeType args:(nullable NSDictionary *)args completion:(nullable FKAPIImageUploadCompletion)completion {
+    
+    FKFileUploadNetworkOperation *fileUpload = [[FKFileUploadNetworkOperation alloc] initWithURL:URL mimeType:mimeType arguments:args completion:completion];
+
+    [[FKDUNetworkController sharedController] execute:fileUpload];
+    
+    return fileUpload;
+    
+}
+
 #if TARGET_OS_IOS
 - (FKImageUploadNetworkOperation *) uploadAssetURL:(NSURL *)assetURL args:(NSDictionary *)args completion:(FKAPIImageUploadCompletion)completion {
     FKImageUploadNetworkOperation *imageUpload = [[FKImageUploadNetworkOperation alloc] initWithAssetURL:assetURL
@@ -495,6 +512,34 @@
                                                                                               completion:completion];
     [[FKDUNetworkController sharedController] execute:imageUpload];
     return imageUpload;
+}
+#endif
+
+@end
+
+#pragma mark - Photo Upload Methods
+#pragma mark -
+
+
+@implementation FlickrKit (ReplacePhoto)
+- (FKReplaceImageNetworkOperation *) replaceImage:(DUImage *)image flickrPhotoId:(NSString *)flickrPhotoId completion:(FKAPIImageUploadCompletion)completion {
+    FKReplaceImageNetworkOperation *replaceImage = [[FKReplaceImageNetworkOperation alloc] initWithImage:image flickrPhotoId:flickrPhotoId completion:completion];
+    [[FKDUNetworkController sharedController] execute:replaceImage];
+    return replaceImage;
+}
+
+- (FKReplaceFileNetworkOperation *)replaceFile:(NSURL *)URL mimeType:(NSString *)mimeType flickrPhotoId:(NSString *)flickrPhotoId completion:(FKAPIImageUploadCompletion)completion {
+    FKReplaceFileNetworkOperation *replaceFile = [[FKReplaceFileNetworkOperation alloc] initWithURL:URL mimeType:mimeType flickrPhotoId:flickrPhotoId completion:completion];
+    [[FKDUNetworkController sharedController] execute:replaceFile];
+    return replaceFile;
+}
+
+#if TARGET_OS_IOS
+//*** NOT TESTED
+- (FKReplaceImageNetworkOperation *) replaceAssetURL:(NSURL *)assetURL flickrPhotoId:(nonnull NSString *)flickrPhotoId completion:(FKAPIImageUploadCompletion)completion {
+    FKReplaceImageNetworkOperation *replaceImage = [[FKReplaceImageNetworkOperation alloc] initWithAssetURL:assetURL flickrPhotoId:flickrPhotoId completion:completion];
+    [[FKDUNetworkController sharedController] execute:replaceImage];
+    return replaceImage;
 }
 #endif
 
